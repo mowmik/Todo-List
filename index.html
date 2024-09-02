@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="shortcut icon" href="image/pngwing.com.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans h-[100vh] flex items-center justify-center bg-no-repeat bg-center bg-cover" style="background-image: url(image/workplace_with_smartphone_laptop_black_table_top_view_copyspace.jpg);">
+    <div class="w-[400px] h-auto min-h-[400px] p-[30px] bg-transparent border-solid border-[2px] border-fuchsia-300 rounded-[10px] backdrop-blur-[15px]">
+      <h1 class="text-zinc-100 text-center mb-[36px] text-[36px] font-bold">Todo List</h1>
+      <div class="flex justify-between mb-[25px]">
+        <input class="flex-1 outline-none pt-[10px] pb-[10px] pr-[10px] pl-[20px] bg-transparent border-[2px] border-solid border-fuchsia-300 rounded-[30px] text-zinc-100 font-[16px] mr-[10px] todo-input" placeholder="Add a new task...">
+        <button class="border-none outline-none bg-fuchsia-300 text-white font-[35px] cursor-pointer rounded-[40px] w-[40px] h-[40px] add-button">
+          <i class="fa fa-plus-circle"></i>
+        </button>
+      </div>
+      <div class="flex justify-between mb-[25px]">
+        <div class="text-zinc-100 pt-[5px] pb-[5px] pr-[15px] pl-[15px] rounded-[100px] border-[2px] border-solid border-fuchsia-300 transition-all duration-0.2 ease-linear cursor-pointer active:bg-fuchsia-300 hover:fuchsia-300" data-filter="completed">Complete</div>
+        <div class="text-zinc-100 pt-[5px] pb-[5px] pr-[15px] pl-[15px] rounded-[100px] border-[2px] border-solid border-fuchsia-300 transition-all duration-0.2 ease-linear cursor-pointer active:bg-fuchsia-300 hover:fuchsia-300" data-filter="pending">Incomplete</div>
+        <div class="flex text-zinc-100  pt-[7px] pb-[7px] pr-[15px] pl-[15px] cursor-pointer transition-all duration-0.2 ease-linear hover:rounded-[5px] hover:bg-fuchsia-300 delete-all ">Delete All</div>
+      </div>
+      <div class="h-[300px] todos-container" >
+        <ul class="todos"></ul>
+        <img class="mt-[55px] mb-o mr-auto ml-auto block empty-image" src="image/empty.svg">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
